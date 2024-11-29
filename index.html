@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oussama Belkahla - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">OB</div>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">نبذة عني</a></li>
+                <li><a href="#skills">المهارات</a></li>
+                <li><a href="#contact">اتصل بي</a></li>
+            </ul>
+            <button id="darkModeToggle" class="dark-mode-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="unnamed.jpg" alt="Oussama Belkahla">
+            </div>
+            <h1>أسامة عبد الرؤوف بلكحلة</h1>
+            <h2>مطور برمجيات و متخصص في الذكاء الاصطناعي</h2>
+            <p>متخصص في تطوير المواقع، تطبيقات سطح المكتب، تطبيقات الهواتف الذكية ونماذج الذكاء الاصطناعي</p>
+            <a href="#contact" class="cta-button">تواصل معي</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>نبذة عني</h2>
+        <div class="about-content">
+            <div class="education">
+                <h3>التعليم</h3>
+                <div class="education-item">
+                    <h4>ماجستير في الذكاء الاصطناعي</h4>
+                </div>
+            </div>
+            <div class="expertise">
+                <h3>مجالات الخبرة</h3>
+                <ul>
+                    <li>تطوير المواقع الإلكترونية</li>
+                    <li>تطوير تطبيقات سطح المكتب</li>
+                    <li>تطوير تطبيقات الهواتف الذكية</li>
+                    <li>نماذج الذكاء الاصطناعي</li>
+                    <li>إدارة قواعد البيانات</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>المهارات التقنية</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>لغات البرمجة</h3>
+                <div class="skill-items">
+                    <span>Java</span>
+                    <span>C++</span>
+                    <span>C</span>
+                    <span>Python</span>
+                    <span>PHP</span>
+                    <span>Prolog</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>تطوير الويب</h3>
+                <div class="skill-items">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>XML</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>قواعد البيانات</h3>
+                <div class="skill-items">
+                    <span>MongoDB</span>
+                    <span>SQL</span>
+                    <span>phpMyAdmin</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>تواصل معي</h2>
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="الاسم" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="رسالتك" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">إرسال</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Oussama Belkahla. جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("Wy9PMv_VRItdXff5E");
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
